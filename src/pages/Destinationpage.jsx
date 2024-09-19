@@ -8,7 +8,7 @@ const Destinationpage = ({navbar}) => {
   useEffect(() => {
     const getDestination = async () => {
       try {
-        const data = await fetch("/api/destinations");
+        const data = await fetch("https://react-project-api.onrender.com/space-tourism/destination");
         const res = await data.json();
         setDestination(res);
       } catch (err) {

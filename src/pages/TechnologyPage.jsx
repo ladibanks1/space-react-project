@@ -10,7 +10,7 @@ const TechnologyPage = ({navbar}) => {
   useEffect(() => {
     const getDestination = async () => {
       try {
-        const data = await fetch("/api/technology");
+        const data = await fetch("https://react-project-api.onrender.com/space-tourism/technology");
         const res = await data.json();
         setTechnology(res);
       } catch (err) {

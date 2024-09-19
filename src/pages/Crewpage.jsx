@@ -9,8 +9,9 @@ const Crewpage = ({ navbar }) => {
   useEffect(() => {
     const getDestination = async () => {
       try {
-        const data = await fetch("/api/crew");
+        const data = await fetch("https://react-project-api.onrender.com/space-tourism/crew");
         const res = await data.json();
+        console.log(res)
         setCrew(res);
       } catch (err) {
         alert(err);
