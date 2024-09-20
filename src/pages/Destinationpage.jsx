@@ -8,7 +8,11 @@ const Destinationpage = ({navbar}) => {
   useEffect(() => {
     const getDestination = async () => {
       try {
-        const data = await fetch("https://react-project-api.onrender.com/space-tourism/destination");
+        const data = await fetch("https://react-project-api.onrender.com/space-tourism/destination" , {
+          headers : {
+            "x-api-key" : import.meta.env.VITE_API_KEY
+          }
+      });
         const res = await data.json();
         setDestination(res);
       } catch (err) {

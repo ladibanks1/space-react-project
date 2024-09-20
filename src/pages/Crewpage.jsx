@@ -9,7 +9,11 @@ const Crewpage = ({ navbar }) => {
   useEffect(() => {
     const getDestination = async () => {
       try {
-        const data = await fetch("https://react-project-api.onrender.com/space-tourism/crew");
+        const data = await fetch("https://react-project-api.onrender.com/space-tourism/crew" , {
+            headers : {
+              "x-api-key" : import.meta.env.VITE_API_KEY
+            }
+        });
         const res = await data.json();
         console.log(res)
         setCrew(res);
