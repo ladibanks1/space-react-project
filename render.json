@@ -1,17 +1,16 @@
 {
-    "services": [
-      {
-        "type": "web",
-        "name": "my-react-app",
-        "env": "static",
-        "staticPublishPath": "build",
-        "routes": [
-          {
-            "src": "/(.*)",
-            "dest": "/index.html"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "services": [
+    {
+      "type": "web",
+      "name": "my-react-app",
+      "env": "static",
+      "staticPublishPath": "build",
+      "routes": [
+        {
+          "src": "/(.*)",
+          "dest": "/index.html"
+        }
+      ]
+    }
+  ]
+}
