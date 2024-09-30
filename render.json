@@ -4,7 +4,7 @@
       "type": "web",
       "name": "space-react-project",
       "env": "static",
-      "staticPublishPath": "build",
+      "staticPublishPath": "dist",
       "routes": [
         {
           "src": "/(.*)",
