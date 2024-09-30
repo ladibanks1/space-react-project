@@ -2,7 +2,7 @@
   "services": [
     {
       "type": "web",
-      "name": "my-react-app",
+      "name": "space-react-project",
       "env": "static",
       "staticPublishPath": "build",
       "routes": [
