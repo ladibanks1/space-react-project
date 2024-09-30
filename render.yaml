@@ -1,8 +1,8 @@
 services:
   - type: web
-    name: my-react-app  # Change this to your app's name
+    name: space-react  # Change this to your app's name
     env: static
-    staticPublishPath: build  # Ensure this points to your build directory
+    staticPublishPath: dist  # Ensure this points to your build directory
     routes:
       - src: /(.*)
         dest: /index.html
